@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+GIT_ROOT=$(git rev-parse --show-toplevel)
+cd $GIT_ROOT
+
+backup_name=tfstate-$(date +"%s")
+backup_dir=backup/$backup_name
+backup_file=$backup_dir.tar.gz
+
+mkdir -p $backup_dir
+
+aws s3 cp --recursive s3://hashicorp-terraform-backend $backup_dir
+tar -zcvf $backup_file $backup_dir
+rm -rf $backup_dir
