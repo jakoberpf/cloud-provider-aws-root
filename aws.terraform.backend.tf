@@ -1,5 +1,6 @@
 module "remote_state" {
-  source = "nozaq/remote-state-s3-backend/aws"
+  source  = "nozaq/remote-state-s3-backend/aws"
+  version = "1.5.0"
 
   providers = {
     aws         = aws
