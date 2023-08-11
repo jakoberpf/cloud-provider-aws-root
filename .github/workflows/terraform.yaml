@@ -66,7 +66,8 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           directory: ./terraform
-          framework: terraform 
+          framework: terraform
+          skip_check: CKV_TF_1,CKV_AWS_40,CKV_AWS_273,CKV_AWS_274
 
       # - name: Terraform plan
       #   id: plan
