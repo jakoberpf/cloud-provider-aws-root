@@ -6,9 +6,9 @@ on:
       - main
     # paths:
     #   - terraform/**
-  # pull_request:
-  #   branches:
-  #     - main
+  pull_request:
+    branches:
+      - main
   #   paths:
   #     - terraform/**
 
