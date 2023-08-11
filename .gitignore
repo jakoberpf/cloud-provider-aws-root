@@ -36,4 +36,7 @@ terraform.rc
 
 # Ignore environment configuration files
 .envrc
-backup
+backend.conf
+
+# Ignore backup folder
+backup/*
