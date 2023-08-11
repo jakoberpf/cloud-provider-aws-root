@@ -1,18 +1,21 @@
 {
-	"data": "ENC[AES256_GCM,data:+xHVx48y2+y8wxbh7CZ/+RHsrsw20UrYX7tXgG1ACxVOyhtU3FF/gpLxsB2HW1XNmuTcCoKGLyWY7lTWG8aE4QeY9qAFIGdl9yBrwjoiX5SfhkqxwvD1Fg4fvlnfcDZ2XiJLzIAnsRsx4WRQauSFWf3aYUaFjxgp8EUa7muHvCsJOXZZJm+31JY5WTS3DP/3jfh0cy7KETnQXEwpUQTCR4bya7MYP0QN1wa4+AlL2gKt4U3TYU3EpycBqK/NbjIkMJaG7MDX1L+Nvl4AErca0XpDArHnOqgGKOdPwOWxrz8olg4lm7JiBepfe5d+yWkdKnGcfsmJphnY7Hez2pQ/FrWARDU4s/6n2JjRr046JSM=,iv:kAg3yGHFPT0IhKVBDs0238pbOFdahrhZDOF8OwKxmzw=,tag:u+usVA7jXlvv1OhXYOXG2A==,type:str]",
+	"data": "ENC[AES256_GCM,data:cY0YG4xMFP0cj/LIS2MT/jTIhDZSTQNV2bza0Xb2S60gA2suN2RLLdFrqvH6/oN9NB2JoXnPN5Bzl9AskRdFKqWKGRBYk4SwsCY+3spbpnls8U5gbSR4FxN8ol8W00v4J5TbA1x74mha5Q+ZnrKVjY5Ej2qZhOmCqF1uXcKCuLC6+uo3vEuRdanehjcRzmlYaP5UzQ/q78izrvK8XwC7Cc9BQAqkqmpFu/tuH1k1G3wrNxU/dx2M0c5QKG8icbtI+dVDNePZbWg89w1x8H+7qcGfOg0TNQ9kuhcJAp6mwF4qQjf7v5aqWtbKYjmOIC0ZjFpERhlSeLvaw/918rU+PxrQZ4zdXXNQPwPiybXbvmOt,iv:/kaa5pyW8uaRs0Co68cciEDHO+6iHLxZMcpRcMimSMg=,tag:Xmrc9fHak9pMCsMb/qxgXQ==,type:str]",
 	"sops": {
 		"kms": null,
 		"gcp_kms": null,
 		"azure_kv": null,
-		"hc_vault": null,
-		"age": [
+		"hc_vault": [
 			{
-				"recipient": "age1dsj2fh5g3yajm3dk8s2f4yvsfuawsm9e5h404yt5r9w26060ndcqdxyn83",
-				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzdGRpYk9LbkV5TjdpYnpZ\nV1I4bWFFOXdZcTZEOG4rT09sMUFHeTcyU1RrClhnRXBrRTNNMW5HVklGS2JxeHFk\nVjhhak9uRzBORUdwTDR3bkNuRHpvejAKLS0tIHlpRFU4WHJhbkFHY0d3Skc4RUFW\ndFM4aXJGZldQTGhOM0RUODFjT3VuUFkKHhA7zv+sdJO70PzKERaGF33J6iCxAGnJ\nKUpz18Xqak1XCXC655YjrBFxgIvPrY/ESaiZ8GS+7YsYRBKG0EdUww==\n-----END AGE ENCRYPTED FILE-----\n"
+				"vault_address": "https://vault.erpf.de",
+				"engine_path": "sops",
+				"key_name": "jakoberpf-cloud-provider-aws-root",
+				"created_at": "2023-08-11T13:51:06Z",
+				"enc": "vault:v1:7wCAMPbh78DqAt2qYipyxn+feSYOd/njXxGHpQEIG5IZCfiUwB+VzyJb9o7toqHT6l5Yo65B7qqRs2VS"
 			}
 		],
-		"lastmodified": "2023-08-11T13:28:45Z",
-		"mac": "ENC[AES256_GCM,data:/B/mMjxyunXKcC3aL79V+uWU1oV4GAQ+famfXabTT03OfBPT1eS5xz1kPKtS7LM+pZtM77cEiKjSjcXC5Dn56RYEZRt4qNqfnHYUUhrDkrb3jZOMFK+seHpc4wllEDTqRRpdp6TGNFxeWxWSxBgAomkL7zn/safpTqpDHGSmXpw=,iv:UQPlkxG5jcVT+buuSNgo3wX59tiQiK8KPuC4bk2i32E=,tag:VVHQ+msIj1dTWHgbJxxcoA==,type:str]",
+		"age": null,
+		"lastmodified": "2023-08-11T13:51:22Z",
+		"mac": "ENC[AES256_GCM,data:+PEc0CvDFntJ5m2Gymw6D/Z7RW0MXuulepK5b5UXF1BCpV0gsoZwAeKulhnZ++6kyh5H+3dyY7cxRhg4FqIUMfG934MSRQLhBDrXqITJsxqfCSgudGgElpKB+CWiiJd/hd1/ajtiajrP7q9nkdvzKCyQibW9+TDbqnE7LFDbCXI=,iv:uYBQlh6bmXfPdSoklAfhIv5skTLPlUGA7FfP41M29/Y=,tag:cCWThXxiYbzXVuVagGm4rQ==,type:str]",
 		"pgp": null,
 		"unencrypted_suffix": "_unencrypted",
 		"version": "3.7.3"
