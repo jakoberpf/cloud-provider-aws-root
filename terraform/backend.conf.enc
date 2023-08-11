@@ -1,21 +1,18 @@
 {
-	"data": "ENC[AES256_GCM,data:cY0YG4xMFP0cj/LIS2MT/jTIhDZSTQNV2bza0Xb2S60gA2suN2RLLdFrqvH6/oN9NB2JoXnPN5Bzl9AskRdFKqWKGRBYk4SwsCY+3spbpnls8U5gbSR4FxN8ol8W00v4J5TbA1x74mha5Q+ZnrKVjY5Ej2qZhOmCqF1uXcKCuLC6+uo3vEuRdanehjcRzmlYaP5UzQ/q78izrvK8XwC7Cc9BQAqkqmpFu/tuH1k1G3wrNxU/dx2M0c5QKG8icbtI+dVDNePZbWg89w1x8H+7qcGfOg0TNQ9kuhcJAp6mwF4qQjf7v5aqWtbKYjmOIC0ZjFpERhlSeLvaw/918rU+PxrQZ4zdXXNQPwPiybXbvmOt,iv:/kaa5pyW8uaRs0Co68cciEDHO+6iHLxZMcpRcMimSMg=,tag:Xmrc9fHak9pMCsMb/qxgXQ==,type:str]",
+	"data": "",
 	"sops": {
 		"kms": null,
 		"gcp_kms": null,
 		"azure_kv": null,
-		"hc_vault": [
+		"hc_vault": null,
+		"age": [
 			{
-				"vault_address": "https://vault.erpf.de",
-				"engine_path": "sops",
-				"key_name": "jakoberpf-cloud-provider-aws-root",
-				"created_at": "2023-08-11T13:51:06Z",
-				"enc": "vault:v1:7wCAMPbh78DqAt2qYipyxn+feSYOd/njXxGHpQEIG5IZCfiUwB+VzyJb9o7toqHT6l5Yo65B7qqRs2VS"
+				"recipient": "age1dsj2fh5g3yajm3dk8s2f4yvsfuawsm9e5h404yt5r9w26060ndcqdxyn83",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5RFBLa25QWnpIbzRPNmVP\nTC9jNXNSSjhISkorNUNGRTFZRzkrZ2cxOUZBCkhQTEhicVpPZC84OWMyYVY2ZmJy\nREtORlRYMTJWd2NXbW5WVHpUZUk0M1EKLS0tIEFFRTJuWG9FTm5kWk05Z3BDUGN4\nOFN5VXZkMWozcnZ4RGpLc1IyVE5wem8K2VcMZuI3hJ0Xm7j/iEUfzoa8rCvokwv9\n0pf+VJ85D0AhuKImcIToUW28vUNhlN3C1NCyiSYAxs9f71yD5djFIg==\n-----END AGE ENCRYPTED FILE-----\n"
 			}
 		],
-		"age": null,
-		"lastmodified": "2023-08-11T13:51:22Z",
-		"mac": "ENC[AES256_GCM,data:+PEc0CvDFntJ5m2Gymw6D/Z7RW0MXuulepK5b5UXF1BCpV0gsoZwAeKulhnZ++6kyh5H+3dyY7cxRhg4FqIUMfG934MSRQLhBDrXqITJsxqfCSgudGgElpKB+CWiiJd/hd1/ajtiajrP7q9nkdvzKCyQibW9+TDbqnE7LFDbCXI=,iv:uYBQlh6bmXfPdSoklAfhIv5skTLPlUGA7FfP41M29/Y=,tag:cCWThXxiYbzXVuVagGm4rQ==,type:str]",
+		"lastmodified": "2023-08-11T14:17:50Z",
+		"mac": "ENC[AES256_GCM,data:4eyGBxYz+fjYUuAEM1Kkfmrsi5Oo/E4FckeFFbzQ0uoeev0CW34LxHrl84SDQcoz+noksAu7tHlNPhhMRLjzqqzkT7zXCNVmYX6Zbypk66fL0KbhbEg+vfQmB6nH3lhVd350CCvrqERhcbfa2pAs3T9GTDryfMVC8ghUgclfarQ=,iv:MhUPwBBQppukMoNoqXmal7HP2q/DoW5oPTy3NJfuugI=,tag:1kLOFmWXBWbd4yGGMKFzDQ==,type:str]",
 		"pgp": null,
 		"unencrypted_suffix": "_unencrypted",
 		"version": "3.7.3"
