@@ -46,7 +46,7 @@ jobs:
         uses: mdgreenwald/mozilla-sops-action@v1.4.1
 
       - name: Decrypt Terraform backend configuration with SOPS
-        run: sops --age ${{ secrets.SOPS_AGE_KEY }} --decrypt backend.conf.enc > backend.conf
+        run: sops --decrypt backend.conf.enc > backend.conf
         env:
           SOPS_AGE_KEY: ${{ secrets.SOPS_AGE_KEY }}
 
