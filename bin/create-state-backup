@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 GIT_ROOT=$(git rev-parse --show-toplevel)
-cd $GIT_ROOT
+cd $GIT_ROOT || exit
 
 backup_name=tfstate-$(date +"%s")
 backup_dir=backup/$backup_name
