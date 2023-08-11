@@ -47,7 +47,7 @@ jobs:
         id: install
 
       - name: Decrypt Terraform backend configuration with SOPS
-        run: sops --decrypt backend.conf.enc > backend.conf
+        run: sops --age ${{ secrets.SOPS_AGE_KEY }} --decrypt backend.conf.enc > backend.conf
 
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@v2
