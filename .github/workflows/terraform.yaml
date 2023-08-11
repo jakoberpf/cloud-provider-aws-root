@@ -46,6 +46,9 @@ jobs:
         uses: mdgreenwald/mozilla-sops-action@v1.4.1
         id: install
 
+      - name: Decrypt Terraform backend configuration with SOPS
+        run: sops --decrypt backend.conf.enc > backend.conf
+
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
@@ -55,7 +58,7 @@ jobs:
 
       - name: Terraform init
         id: init
-        run: terraform init
+        run: terraform init -backend-config=backend.conf
 
       - name: Terraform format
         id: fmt
