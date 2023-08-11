@@ -10,6 +10,8 @@ module "remote_state" {
   s3_bucket_name          = "hashicorp-terraform-backend"
   s3_bucket_name_replica  = "hashicorp-terraform-backend-replica"
   override_s3_bucket_name = true
+
+  tags = local.tags
 }
 
 /* output "terraform_state_bucket" {

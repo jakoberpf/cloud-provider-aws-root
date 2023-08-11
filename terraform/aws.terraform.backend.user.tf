@@ -1,9 +1,7 @@
 resource "aws_iam_user" "terraform" {
   name = "Terraform"
 
-  tags = {
-    Terraform = "true"
-  }
+  tags = local.tags
 }
 
 resource "aws_iam_user_policy_attachment" "remote_state_access" {

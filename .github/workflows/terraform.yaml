@@ -12,9 +12,7 @@ on:
   #   paths:
   #     - terraform/**
 
-permissions:
-  id-token: write   # This is required for requesting the JWT
-  contents: read    # This is required for actions/checkout
+permissions: write-all
 
 env:
   TF_LOG: INFO  # verbosity setting for Terraform logs
