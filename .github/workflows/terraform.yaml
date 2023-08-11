@@ -1,4 +1,4 @@
-name: "Terraform Infrastructure Change Management Pipeline with GitHub Actions"
+name: "Terraform Workflow"
 
 on:
   push:
@@ -6,18 +6,19 @@ on:
       - main
     paths:
       - terraform/**
-  pull_request:
-    branches:
-      - main
-    paths:
-      - terraform/**
+  # pull_request:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - terraform/**
+
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
 
 env:
   # verbosity setting for Terraform logs
   TF_LOG: INFO
-  # Credentials for deployment to AWS
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 jobs:
   terraform:
@@ -32,6 +33,13 @@ jobs:
     steps:
       - name: Checkout the repository to the runner
         uses: actions/checkout@v2
+
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::433082585283:role/github-oidc-administrator
+          role-session-name: cloud-provider-aws-root
+          aws-region: "eu-central-1" # ${{ env.AWS_REGION }}
 
       - name: Setup Terraform with specified version on the runner
         uses: hashicorp/setup-terraform@v2
