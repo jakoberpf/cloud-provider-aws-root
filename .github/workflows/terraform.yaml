@@ -21,7 +21,7 @@ env:
 
 jobs:
   terraform:
-    name: "Terraform Infrastructure Change Management"
+    name: "Terraform Testing, Validation, Scanning and Deployment"
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -61,7 +61,7 @@ jobs:
         id: validate
         run: terraform validate
 
-      - name: Test with Checkov
+      - name: Terraform scanning with checkov
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
