@@ -13,15 +13,3 @@ module "remote_state" {
 
   tags = local.tags
 }
-
-/* output "terraform_state_bucket" {
-  value = module.remote_state.state_bucket.bucket
-}
-
-output "terraform_dynamodb_table" {
-  value = module.remote_state.dynamodb_table.id
-}
-
-output "terraform_kms_key" {
-  value = module.remote_state.kms_key.id
-} */
